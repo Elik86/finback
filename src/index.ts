@@ -1,5 +1,4 @@
 import express, {Express, Request, Response, NextFunction} from "express";
-import cors from "cors";
 import dotenv from "dotenv";
 import {ROUTER} from "./routes";
 import apicache from "apicache";
@@ -17,9 +16,6 @@ const cache = apicache.middleware;
 
 // Set global cache to 1 minute
 app.use(cache(CACHE_DURATION));
-
-// set cors
-// app.use(cors());
 
 // Cors
 app.use(function (req: Request, res: Response, next: NextFunction) {
