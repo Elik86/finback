@@ -17,8 +17,6 @@ const CACHE_DURATION = process.env.CACHE_DURATION;
 const cache = apicache_1.default.middleware;
 // Set global cache to 1 minute
 app.use(cache(CACHE_DURATION));
-// set cors
-// app.use(cors());
 // Cors
 app.use(function (req, res, next) {
     // Website you wish to allow to connect
