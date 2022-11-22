@@ -1,3 +1,4 @@
 ## Run the evn
 
-to run the backend - npm run dev
+1. Run "npm install"
+2. Run "npm run dev"
